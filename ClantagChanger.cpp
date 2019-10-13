@@ -5,6 +5,7 @@ constexpr char character_builders[5] = { 0x7C, 0x2F, 0x2D, 0x2D, 0x5C };
 int current_animation_mode = 0;
 int current_width = 15;
 unsigned __int32 anim_frame_time = 450UL;
+#define CLANTAGADR 0x89A10
 std::string clantag_text = "";
 std::string last_final_text = "";
 
@@ -62,7 +63,7 @@ static __forceinline void SetClanTag(const char* tag, const char* name)
 
 	DWORD dwTagAddress = (DWORD)ShellCodeAddress + SHELLCODE_SIZE;
 	DWORD dwNameAddress = (DWORD)ShellCodeAddress + SHELLCODE_SIZE + TAG_SIZE + 1;
-	DWORD dwSetClanAddress = Globals.m_dwEngineDLL + 0x89890;
+	DWORD dwSetClanAddress = Globals.m_dwEngineDLL + CLANTAGADR;/*TODO: use findsig to get this*/
 
 	memcpy(Shellcode + 0x3, &dwTagAddress, sizeof(DWORD));
 	memcpy(Shellcode + 0x8, &dwNameAddress, sizeof(DWORD));

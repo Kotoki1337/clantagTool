@@ -1,0 +1,44 @@
+# Prerequisites
+*.d
+<<<<<<< HEAD
+.vs
+=======
+>>>>>>> 2f3170179c9bbe85b4099c7f6c895ced8ebe123e
+Win32
+output
+intermediates
+Release
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+.log
+.txt.
+
+# Precompiled Headers
+*.gch
+*.pch
+*.pdb
+
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
