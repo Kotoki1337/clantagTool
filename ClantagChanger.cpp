@@ -5,7 +5,7 @@ constexpr char character_builders[5] = { 0x7C, 0x2F, 0x2D, 0x2D, 0x5C };
 int current_animation_mode = 0;
 int current_width = 15;
 unsigned __int32 anim_frame_time = 450UL;
-#define CLANTAGADR 0x89D60
+#define CLANTAGADR 0x89ED0
 std::string clantag_text = "";
 std::string last_final_text = "";
 
